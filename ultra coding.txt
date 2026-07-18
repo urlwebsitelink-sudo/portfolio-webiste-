@@ -1,0 +1,212 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uiltra arts & science College</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+.hero{
+    height:100vh;
+    background:linear-gradient(
+    -45deg,
+    #0F172A,
+    #2563EB,
+    #38BDF8,
+    #1E3A8A);
+
+    background-size:400% 400%;
+    animation:bgmove 10s infinite;
+    color:white;
+    text-align:center;
+    padding-top:150px;
+}
+
+@keyframes bgmove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    background:white;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    margin:15px;
+    color:#2563EB;
+    font-weight:bold;
+}
+
+section{
+    padding:60px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px lightgray;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#2563EB;
+    color:white;
+    cursor:pointer;
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Courses</a>
+<a href="#">Facilities</a>
+<a href="#">Placement</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+
+<h1>🎓 Ultra arts & science COLLEGE</h1>
+
+<h2>Admissions Open 2027 - 2028</h2>
+
+<p>
+Empowering Students Through Quality Education,
+Innovation, and Career Excellence.
+</p>
+
+<br>
+
+<button onclick="applyNow()">
+Apply Now
+</button>
+
+</div>
+
+<section>
+
+<h2>🏫 About College</h2>
+
+<div class="card">
+Providing quality education with modern facilities,
+experienced faculty, and industry-focused learning.
+</div>
+
+</section>
+
+<section>
+
+<h2>📚 Courses Offered</h2>
+
+<div class="card">
+BCA - Bachelor of Computer Applications
+</div>
+
+<div class="card">
+B.Sc Computer Science
+</div>
+
+<div class="card">
+B.Com
+</div>
+
+<div class="card">
+BBA
+</div>
+
+</section>
+
+<section>
+
+<h2>⭐ Why Choose Us?</h2>
+
+<div class="card">
+100% Placement Assistance
+</div>
+
+<div class="card">
+Modern Computer Labs
+</div>
+
+<div class="card">
+Experienced Faculty Members
+</div>
+
+<div class="card">
+Industry-Oriented Training
+</div>
+
+<div class="card">
+Scholarship Opportunities
+</div>
+
+</section>
+
+<section>
+
+<h2>🏆 Placement Highlights</h2>
+
+<div class="card">
+2000+ Students Placed
+</div>
+
+<div class="card">
+Top IT Company Recruitment
+</div>
+
+<div class="card">
+Internship Opportunities
+</div>
+
+</section>
+
+<section>
+
+<h2>📞 Contact Us</h2>
+
+<div class="card">
+<br>
+Email: admin@uasc.com
+</div>
+
+</section>
+
+<script>
+function applyNow(){
+alert("Admissions Open! Apply Today.");
+}
+</script>
+
+</body>
+</html>
+```

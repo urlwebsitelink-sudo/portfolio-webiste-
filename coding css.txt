@@ -1,0 +1,179 @@
+```html
+<section class="courses-section">
+    <h2>📚 Courses Offered</h2>
+
+    <div class="book">
+
+        
+
+        <div class="page">
+            <h3>Computer & IT Courses</h3>
+            <p>Technology & Programming</p>
+
+            <button onclick="showCourse('Computer & IT Courses')">
+                Learn More
+            </button>
+        </div>
+
+        <div class="page">
+            <h3>Commerce Courses</h3>
+            <p> accounting, taxation and business management</p>
+
+            <button onclick="showCourse('Commerce Courses')">
+                Learn More
+            </button>
+        </div>
+         <div class="page">
+            <h3>Professional Courses</h3>
+            <p>professional industry career opportunities</p>
+
+            <button onclick="showCourse('Professional Courses')">
+                Learn More
+            </button>
+        </div>
+         <div class="page">
+            <h3>Arts Courses</h3>
+            <p>developing communication</p>
+
+            <button onclick="showCourse('Arts Courses')">
+                Learn More
+            </button>
+        </div>
+          <div class="page">
+            <h3>Postgraduate Courses</h3>
+            <p>Logistics & Supply Chain Management</p>
+
+            <button onclick="showCourse('Postgraduate Courses')">
+                Learn More
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <div id="courseInfo"></div>
+</section>
+```
+
+```css
+body{
+    background:linear-gradient(
+    45deg,
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #f9ca24);
+    background-size:400% 400%;
+    animation:bgmove 10s infinite;
+}
+
+@keyframes bgmove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.book{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:50px;
+}
+
+.page{
+    width:220px;
+    height:280px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+    transform-origin:left;
+    animation:openBook 3s infinite alternate;
+}
+
+.page:nth-child(2){
+    animation-delay:1s;
+}
+
+.page:nth-child(3){
+    animation-delay:2s;
+}
+
+@keyframes openBook{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(-25deg);
+    }
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+```
+
+```javascript
+function showCourse(course){
+
+let info = document.getElementById("courseInfo");
+
+
+if(course==="computer and IT courses"){
+info.innerHTML=
+"<h3>B.Sc Computer Science</h3>
+"<h3>B.Sc Information Technology (IT)</h3>";
+"<h3>B.Sc Animation & Game Designing</h3>";
+"<h3>B.Sc Artificial Intelligence</h3>";
+"<h3>B.Sc Cloud Computing & Cyber Security</h3>";
+"<h3>B.Sc Data Science & Analytics</h3><p>Study software engineering, networking, data structures and computer technologies.</p>";
+"<h3>BCA</h3><p>Learn programming, web development, databases and software applications.</p>";
+}
+
+if(course==="Commerce Courses"){
+info.innerHTML=
+"<h3>B.Com Computer Applications</h3>";
+"<h3>B.Com Professional Accounting</h3>";
+"<h3>B.Com E-Commerce</h3>";
+"<h3>B.Com Blockchain & FinTech</h3><p>Learn accounting, finance, taxation and business management.</p>";
+}
+
+if(course==="Professional Courses"){
+info.innerHTML=
+"<h3>B.Sc. Visual Communication</h3>";
+"<h3>B.Sc. Forensic Science</h3>";
+"<h3>B.Sc. Fire & Safety Management</h3>";
+"<h3>B.Sc. Hotel Management & Catering Science</h3>";
+"<h3>B.Sc. Costume Designing & Fashion Technology</h3><p>Learn creative design, media communication, forensic investigation, fire and industrial safety, hotel and hospitality management, catering services, fashion  and professional industry skills with excellent career opportunities.
+.</p>";
+";
+}
+
+if(course==="Arts Courses"){
+info.innerHTML=
+"<h3>B.A. Tamil</h3><p>";
+"<h3>B.A. English</h3>";
+"<h3>B.A. Economics</h3>";
+"<h3>B.A. Political Science</h3>";
+"<h3>B.A. History</h3><p>literature, history, economics, and social sciences while developing communication.</p>";
+}
+
+if(course==="Postgraduate Courses"){
+info.innerHTML=
+"<h3>MBA</h3>";
+"<h3>M.Com.</h3>";
+"<h3>M.Sc. (selected science disciplines)</h3>";
+"<h3>M.A. (selected arts disciplines)</h3><p>Learn (HR, Finance, Marketing, Business Analytics, Logistics & Supply Chain Management).</p>";
+}
+
+
+
+
+}
+```
