@@ -1,0 +1,99 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+<title>RK Foods - Amma Special</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#fff8e7,#ffe4b5);
+    text-align:center;
+    margin:0;
+}
+
+.header{
+    background:#8B4513;
+    color:white;
+    padding:30px;
+}
+
+.product-card{
+    width:300px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+button{
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>RK FOODS</h1>
+    <h2>Amma Special</h2>
+    <p>Home Made Taste, Made With Love ❤️</p>
+</div>
+
+<div class="product-card">
+    <h3>Amma Special Paruppu Podi</h3>
+    <p>Traditional homemade spice powder.</p>
+
+    <button onclick="orderProduct('Paruppu Podi')">
+        Order Now
+    </button>
+</div>
+
+<div class="product-card">
+    <h3>Amma Special Poondu Thokku</h3>
+    <p>Spicy and flavorful garlic pickle.</p>
+
+    <button onclick="orderProduct('Poondu Thokku')">
+        Order Now
+    </button>
+</div>
+
+<div class="product-card">
+    <h3>Amma Special Rava Laddu</h3>
+    <p>Soft and delicious sweet made with ghee.</p>
+
+    <button onclick="orderProduct('Rava Laddu')">
+        Order Now
+    </button>
+</div>
+
+<script>
+function orderProduct(product){
+
+let phone = "919952156494";
+
+let message =
+"Hello RK Foods, I would like to order " + product;
+
+let url =
+"https://wa.me/" + phone +
+"?text=" + encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+</script>
+</body>
+</html>

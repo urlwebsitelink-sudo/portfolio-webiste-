@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Ultra Arts & Science College. Providing high-quality education, modern facilities, and excellent career opportunities. Apply now for admissions.">
-    <title>Ultra Arts & Science College - Empowering Excellence</title>
+    <meta name="description" content="RK Foods - Amma Special. Traditional homemade Indian spice powders, pickles, and sweets. Handcrafted with love, pure ingredients, and no preservatives. Order online via WhatsApp.">
+    <title>RK Foods - Amma Special | Homemade Taste, Made with Love</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header>
+    <!-- Header / Navigation -->
+    <header class="header" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo-section">
-                <img src="ultra logo.jpeg" alt="Ultra Arts & Science College Logo">
-                <div class="college-name">ULTRA <span>COLLEGE</span></div>
+            <a href="#home" class="logo-section">
+                <span class="logo-icon">🍲</span>
+                <div class="logo-text">
+                    <span class="brand-name">RK FOODS</span>
+                    <span class="sub-brand">AMMA SPECIAL</span>
+                </div>
             </a>
             
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
@@ -24,377 +34,536 @@
             </button>
             
             <nav class="nav-links" id="navLinks">
-                <a href="index.html" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#courses">Courses</a>
-                <a href="#why-choose-us">Why Choose Us</a>
-                <a href="students.html">Student Life</a>
-                <a href="#placements">Placements</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#story">Our Story</a>
+                <a href="#products">Products</a>
+                <a href="#features">Why Us</a>
+                <a href="#reviews">Reviews</a>
                 <a href="#contact">Contact</a>
-                <a href="https://uasc.ac.in" target="_blank" rel="noopener noreferrer" class="btn-website">Official Website</a>
-                <a href="#" class="btn-cta open-modal-btn">Apply Now</a>
+                <a href="https://wa.me/919952156494" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-nav">
+                    <i class="fab fa-whatsapp"></i> Chat Now
+                </a>
             </nav>
         </div>
     </header>
-    <section class="hero" style="background-image: url('ultra background image .jpeg');" id="home">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="hero-tag">
-                <span>🎓</span> Admissions Open 2027 - 2028
+            <div class="badge-hero">
+                <span class="badge-icon">✨</span> Traditional Recipes
             </div>
-            <h1 class="hero-title">Ultra Arts & Science College</h1>
-            <h2 class="hero-subtitle">Empowering Students Through Quality Education</h2>
-            <p class="hero-desc">
-                Pioneering innovation, academic integrity, and career excellence to shape the leaders of tomorrow. Explore our diverse programs and start your journey today.
+            <h1 class="hero-title">Home Made Taste, Made With Love ❤️</h1>
+            <p class="hero-description">
+                Experience the authentic flavor of traditional South Indian spices, pickles, and sweets prepared hygienically in our home kitchen. Just like Amma makes it!
             </p>
             <div class="hero-actions">
-                <a href="#" class="btn-cta open-modal-btn">Apply Now</a>
-                <a href="https://uasc.ac.in" target="_blank" rel="noopener noreferrer" class="btn-website">Official Website 🌐</a>
-                <a href="students.html" class="btn-secondary">Explore Student Life</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="section-header">
-            <span class="section-badge">About Us</span>
-            <h2 class="section-title">🏫 About College</h2>
-        </div>
-        <div class="grid-2">
-            <div class="about-content">
-                <p class="about-highlight">
-                    Ultra Arts & Science College is dedicated to providing quality education with modern facilities, experienced faculty, and industry-focused learning.
-                </p>
-                <p style="color: var(--text-muted);">
-                    We foster an academic environment that encourages curiosity, critical thinking, and personal growth. Our campus is equipped with state-of-the-art infrastructure to support student endeavors in academics, sports, and technology.
-                </p>
-                <div style="margin-top: 10px;">
-                    <a href="students.html" class="btn-cta" style="display: inline-block; font-size: 0.9rem;">View Campus Gallery</a>
-                </div>
-            </div>
-            <div class="about-image-wrapper">
-                <!-- Using students study image as a representative layout on the home page about section as well -->
-                <img src="students study image .jpeg" alt="Students studying at Ultra College campus">
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses" style="border-top: 1px solid var(--border-color);">
-        <div class="section-header">
-            <span class="section-badge">Academic Programs</span>
-            <h2 class="section-title">📚 Courses Offered</h2>
-        </div>
-        <div class="courses-container">
-            <!-- 3D Book Shelf -->
-            <div class="book-shelf" id="bookShelf">
-                <!-- Computer & IT -->
-                <div class="book-page active" id="course-tab-computer-it" data-category="computer-it">
-                    <div>
-                        <div class="book-icon">💻</div>
-                        <h3>Computer & IT</h3>
-                        <p>Software development, computing, and cutting-edge tech.</p>
-                    </div>
-                    <button class="btn-page" aria-label="Explore Computer and IT Courses">
-                        <span>Explore</span>
-                    </button>
-                </div>
-                
-                <!-- Commerce -->
-                <div class="book-page" id="course-tab-commerce" data-category="commerce">
-                    <div>
-                        <div class="book-icon">📊</div>
-                        <h3>Commerce</h3>
-                        <p>Financial accounting, professional auditing, and modern FinTech.</p>
-                    </div>
-                    <button class="btn-page" aria-label="Explore Commerce Courses">
-                        <span>Explore</span>
-                    </button>
-                </div>
-                
-                <!-- Professional -->
-                <div class="book-page" id="course-tab-professional" data-category="professional">
-                    <div>
-                        <div class="book-icon">⚙️</div>
-                        <h3>Professional</h3>
-                        <p>Forensic science, visual communication, and hotel management.</p>
-                    </div>
-                    <button class="btn-page" aria-label="Explore Professional Courses">
-                        <span>Explore</span>
-                    </button>
-                </div>
-                
-                <!-- Arts -->
-                <div class="book-page" id="course-tab-arts" data-category="arts">
-                    <div>
-                        <div class="book-icon">🎨</div>
-                        <h3>Arts & Lit</h3>
-                        <p>Literature, history, political science, and languages.</p>
-                    </div>
-                    <button class="btn-page" aria-label="Explore Arts Courses">
-                        <span>Explore</span>
-                    </button>
-                </div>
-                
-                <!-- Postgraduate -->
-                <div class="book-page" id="course-tab-postgraduate" data-category="postgraduate">
-                    <div>
-                        <div class="book-icon">🎓</div>
-                        <h3>Postgraduate</h3>
-                        <p>Master programs, research work, and business analytics.</p>
-                    </div>
-                    <button class="btn-page" aria-label="Explore Postgraduate Courses">
-                        <span>Explore</span>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Details Showcase Area -->
-            <div class="course-showcase-panel" id="courseShowcasePanel">
-                <div class="showcase-header">
-                    <div class="showcase-header-icon" id="showcaseHeaderIcon">💻</div>
-                    <div class="showcase-header-text">
-                        <h3 id="showcaseCategoryTitle">Computer & IT Courses</h3>
-                        <p id="showcaseCategoryDesc">Prepare for the digital frontier with industry-focused technology programs, hands-on programming labs, and cutting-edge software training.</p>
-                    </div>
-                </div>
-                <div class="showcase-grid animate-fade-in" id="showcaseGrid">
-                    <div class="showcase-card">
-                        <h4>B.Sc Computer Science</h4>
-                        <p>Study software engineering, algorithms, networking, data structures, and computer architectures.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>B.Sc Information Technology (IT)</h4>
-                        <p>Focuses on database management, system administration, web technologies, and security.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>B.Sc Animation & Game Designing</h4>
-                        <p>Unleash creativity through 3D modeling, rendering, game engine development, and digital art.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>B.Sc Artificial Intelligence</h4>
-                        <p>Delve into machine learning, neural networks, computer vision, and cognitive computing systems.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>B.Sc Cloud Computing & Cyber Security</h4>
-                        <p>Learn network protection, ethical hacking, virtualization, and secure cloud infrastructures.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>B.Sc Data Science & Analytics</h4>
-                        <p>Analyze complex data patterns, statistical methods, business intelligence, and predictive modeling.</p>
-                    </div>
-                    <div class="showcase-card">
-                        <h4>BCA (Bachelor of Computer Applications)</h4>
-                        <p>Learn core programming languages, web application development, databases, and practical coding frameworks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" style="border-top: 1px solid var(--border-color);">
-        <div class="section-header">
-            <span class="section-badge">Why Ultra College</span>
-            <h2 class="section-title">⭐ Why Choose Us?</h2>
-        </div>
-        <div class="grid-3">
-            <div class="card feature-card">
-                <div class="feature-number">01</div>
-                <div>
-                    <h3 class="feature-title">100% Placement Assistance</h3>
-                    <p class="feature-desc">Our dedicated placement cell guides students through mock interviews, resume styling, and corporate networking.</p>
-                </div>
-            </div>
-            <div class="card feature-card">
-                <div class="feature-number">02</div>
-                <div>
-                    <h3 class="feature-title">Modern Computer Labs</h3>
-                    <p class="feature-desc">Equipped with high-performance workstations, modern development environments, and high-speed internet connectivity.</p>
-                </div>
-            </div>
-            <div class="card feature-card">
-                <div class="feature-number">03</div>
-                <div>
-                    <h3 class="feature-title">Experienced Faculty</h3>
-                    <p class="feature-desc">Learn from distinguished academicians and experienced industry professionals dedicated to student growth.</p>
-                </div>
-            </div>
-            <div class="card feature-card">
-                <div class="feature-number">04</div>
-                <div>
-                    <h3 class="feature-title">Industry-Oriented Training</h3>
-                    <p class="feature-desc">Regular workshops, bootcamps, guest lectures, and live industrial project work to bridge theory and practice.</p>
-                </div>
-            </div>
-            <div class="card feature-card">
-                <div class="feature-number">05</div>
-                <div>
-                    <h3 class="feature-title">Scholarship Opportunities</h3>
-                    <p class="feature-desc">Financial support and academic merit-based scholarships to enable deserving students to achieve their dreams.</p>
-                </div>
-            </div>
-            <div class="card feature-card">
-                <div class="feature-number">06</div>
-                <div>
-                    <h3 class="feature-title">Dynamic Campus Life</h3>
-                    <p class="feature-desc">Engage in technical clubs, cultural events, sports meets, and social development organizations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Placements Section -->
-    <section id="placements" style="border-top: 1px solid var(--border-color);">
-        <div class="section-header">
-            <span class="section-badge">Career Milestones</span>
-            <h2 class="section-title">🏆 Placement Highlights</h2>
-        </div>
-        <div class="grid-3">
-            <div class="card stat-card">
-                <div class="stat-number">2000+</div>
-                <h3 class="stat-label">Students Placed</h3>
-                <p class="stat-desc">Graduates successfully stepping into corporate roles in top companies globally.</p>
-            </div>
-            <div class="card stat-card">
-                <div class="stat-number">Top IT</div>
-                <h3 class="stat-label">Company Recruitment</h3>
-                <p class="stat-desc">Leading technology partners recruiting for software, product, and consultant roles.</p>
-            </div>
-            <div class="card stat-card">
-                <div class="stat-number">100%</div>
-                <h3 class="stat-label">Internship Offers</h3>
-                <p class="stat-desc">Practical industrial internships integrated directly into semester schedules.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact" style="border-top: 1px solid var(--border-color); margin-bottom: 60px;">
-        <div class="section-header">
-            <span class="section-badge">Get In Touch</span>
-            <h2 class="section-title">📞 Contact Us</h2>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info-list">
-                <div class="card contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <div class="contact-text">
-                        <h5>Email</h5>
-                        <p>admin@uasc.com</p>
-                    </div>
-                </div>
-                <div class="card contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-text">
-                        <h5>Location</h5>
-                        <p>Ultra Campus, Bypass Road, Madurai, Tamil Nadu, India</p>
-                    </div>
-                </div>
-                <a href="https://uasc.ac.in" target="_blank" rel="noopener noreferrer" class="card contact-item" style="text-decoration: none; display: flex; align-items: center; width: 100%;">
-                    <div class="contact-icon">🌐</div>
-                    <div class="contact-text">
-                        <h5>Website</h5>
-                        <p>uasc.ac.in (Visit Official Site)</p>
-                    </div>
+                <a href="#products" class="btn-primary">
+                    <i class="fas fa-utensils"></i> Explore Products
+                </a>
+                <a href="https://wa.me/919952156494?text=Hello%20RK%20Foods%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Custom Order
                 </a>
             </div>
-            
-            <div class="card">
-                <h3 style="font-family: var(--font-heading); margin-bottom: 20px;">Send a Message</h3>
-                <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully! Our help desk will respond shortly.'); this.reset();">
-                    <div class="form-group">
-                        <label class="form-label" for="contactName">Your Name</label>
-                        <input type="text" id="contactName" class="form-input" placeholder="Enter your full name" required>
+        </div>
+        <div class="hero-decorations">
+            <div class="spice-leaf leaf-1"></div>
+            <div class="spice-leaf leaf-2"></div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="grid-layout grid-2">
+                <div class="story-image-container">
+                    <div class="image-stack">
+                        <!-- Main brand image -->
+                        <img src="rk foods image.png" alt="RK Foods Signature Dishes" class="main-img img-reveal">
+                        <!-- Small floating card image -->
+                        <div class="floating-img-card">
+                            <img src="rk foods amma special foods .jpeg" alt="Amma cooking fresh special ingredients">
+                            <div class="card-caption">Authentic Recipes</div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="contactEmail">Your Email</label>
-                        <input type="email" id="contactEmail" class="form-input" placeholder="Enter your email address" required>
+                </div>
+                <div class="story-text-container">
+                    <span class="section-tag">Since 2024</span>
+                    <h2 class="section-title">The Heritage of Amma's Kitchen</h2>
+                    <p class="paragraph-text lead-text">
+                        RK Foods was born from a simple passion: to share the authentic, comforting flavors of home-cooked food that we grew up with. 
+                    </p>
+                    <p class="paragraph-text text-muted">
+                        Every package of our special spice powders, thick pickles, and traditional sweets is prepared by hand in small batches. We source premium, single-origin ingredients, dry them under the natural sun, and slow-roast them to lock in rich aroma and nutritional values. 
+                    </p>
+                    <div class="story-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="highlight-desc">
+                                <h4>100% Preservative Free</h4>
+                                <p>No added colors, MSG, or artificial chemicals.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-heart"></i></div>
+                            <div class="highlight-desc">
+                                <h4>Handcrafted & Hygienic</h4>
+                                <p>Strict quality control and traditional hygiene standards.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label" for="contactMessage">Message</label>
-                        <textarea id="contactMessage" class="form-input" rows="4" placeholder="How can we assist you?" style="resize: none;" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Admission Application Modal -->
-    <div class="modal" id="applyModal">
-        <div class="modal-content">
-            <button class="modal-close" id="closeModalBtn" aria-label="Close Application Dialog">&times;</button>
-            <h3 class="modal-title">Apply for Admission</h3>
-            <p class="modal-subtitle">Begin your future. Submit this brief application form and our advisory board will reach out.</p>
-            <form id="admissionForm">
-                <div class="form-group">
-                    <label class="form-label" for="studentName">Candidate Name</label>
-                    <input type="text" id="studentName" class="form-input" placeholder="Enter your full name" required>
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pure & Fresh</span>
+                <h2 class="section-title text-center">Our Signature Amma Specials</h2>
+                <p class="section-subtitle text-center">
+                    Browse our selected culinary creations. Order directly through WhatsApp with custom packaging size choices.
+                </p>
+            </div>
+            
+            <div class="grid-layout grid-3">
+                
+                <!-- Product 1: Paruppu Podi -->
+                <div class="product-card card-reveal">
+                    <div class="product-img-wrapper">
+                        <img src="amma special foods .jpeg" alt="Amma Special Paruppu Podi">
+                        <span class="product-badge">Best Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Amma Special Paruppu Podi</h3>
+                        <p class="product-desc">
+                            A traditional roasted lentil spice powder blend. Loaded with high plant-protein, garlic, and red chilies. Perfectly pairs with hot steamed rice and a dollop of pure ghee.
+                        </p>
+                        <div class="product-pricing">
+                            <span class="price-label">Starts from</span>
+                            <span class="price-val">₹45</span>
+                            <span class="unit-qty">/ 100g</span>
+                        </div>
+                        <button class="btn-order-now" onclick="openOrderModal('Amma Special Paruppu Podi')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="studentEmail">Email Address</label>
-                    <input type="email" id="studentEmail" class="form-input" placeholder="candidate@example.com" required>
+
+                <!-- Product 2: Poondu Thokku -->
+                <div class="product-card card-reveal">
+                    <div class="product-img-wrapper">
+                        <img src="amma special foods  image .jpeg" alt="Amma Special Poondu Thokku">
+                        <span class="product-badge">Spicy & Tangy</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Amma Special Poondu Thokku</h3>
+                        <p class="product-desc">
+                            Rich, spicy, and deep garlic pickle simmered slow in cold-pressed sesame oil. Cooked with tamarind pulp and secret spices for a savory depth. Ideal with idli, dosa, curd rice, or chapati.
+                        </p>
+                        <div class="product-pricing">
+                            <span class="price-label">Starts from</span>
+                            <span class="price-val">₹50</span>
+                            <span class="unit-qty">/ 100g</span>
+                        </div>
+                        <button class="btn-order-now" onclick="openOrderModal('Amma Special Poondu Thokku')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="studentPhone">Mobile Number</label>
-                    <input type="tel" id="studentPhone" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+
+                <!-- Product 3: Rava Laddu -->
+                <div class="product-card card-reveal">
+                    <div class="product-img-wrapper">
+                        <img src="rk foods amma special foods .jpeg" alt="Amma Special Rava Laddu">
+                        <span class="product-badge">Festive Sweet</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Amma Special Rava Laddu</h3>
+                        <p class="product-desc">
+                            Melt-in-your-mouth sweets crafted from finely ground semolina, pure aromatic farm ghee, crunchy roasted cashew nuts, raisins, and a dash of ground cardamom. Made fresh to order.
+                        </p>
+                        <div class="product-pricing">
+                            <span class="price-label">Starts from</span>
+                            <span class="price-val">₹20</span>
+                            <span class="unit-qty">/ 4 pieces</span>
+                        </div>
+                        <button class="btn-order-now" onclick="openOrderModal('Amma Special Rava Laddu')">
+                            <i class="fab fa-whatsapp"></i> Order Now
+                        </button>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="form-label" for="studentCourse">Desired Course</label>
-                    <select id="studentCourse" class="form-input" required style="background-color: #1e293b;">
-                        <option value="" disabled selected>Select a program</option>
-                        <option value="BCA">BCA (Computer Applications)</option>
-                        <option value="B.Sc Computer Science">B.Sc Computer Science</option>
-                        <option value="B.Com">B.Com (Commerce)</option>
-                        <option value="BBA">BBA (Management)</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer; margin-top: 10px;">Submit Application</button>
-            </form>
+
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Quality Promise</span>
+                <h2 class="section-title text-center">Why RK Foods Stands Apart</h2>
+            </div>
+            
+            <div class="grid-layout grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-house-chimney"></i>
+                    </div>
+                    <h3>100% Homemade</h3>
+                    <p>Prepared in real family kitchens adhering strictly to authentic age-old grandmother recipes.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Zero Preservatives</h3>
+                    <p>We do not add standard commercial preservatives, artificial coloring agents, or stabilizer chemicals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-wheat-awn"></i>
+                    </div>
+                    <h3>Premium Ingredients</h3>
+                    <p>Sourced locally from trusted clean organic farms to ensure rich aroma and standard nutrients.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Hygienically Packed</h3>
+                    <p>Double-sealed eco-friendly packaging ensuring taste stays fresh from our stove to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Reviews -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Happy Customers</span>
+                <h2 class="section-title text-center">Love from Food Lovers</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                
+                <!-- Review 1: Aarthi -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "The Paruppu Podi is absolutely authentic and delicious! It has the perfect aroma of roasted spices. My kids love mixing it with hot ghee and rice. A must-buy for every household!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Aarthi</h4>
+                            <span>Thirupuvanam, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2: Sakthisri -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "I am in love with the Poondu Thokku. It's incredibly flavorful with the right amount of garlic and spiciness. It's my daily side dish for idli and dosa now. Absolutely brilliant quality!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Sakthisri</h4>
+                            <span>Melur, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3: Renuka Devi -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Ordered Rava Laddu for a family function. They were so fresh and soft, loaded with pure farm ghee and roasted cashews. They literally melted in my mouth. Excellent sweet!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Renuka Devi</h4>
+                            <span>Madurai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4: Samyuktha -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "The authentic homemade taste of these products is outstanding. No added colors or chemicals, which makes it totally healthy. We regularly order Poondu Thokku and Paruppu Podi now!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Samyuktha</h4>
+                            <span>Melur, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 5: Renuga -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Superb South Indian flavor! The spice levels are perfectly balanced, and the packaging keeps the freshness intact. Ordering via WhatsApp is incredibly quick and convenient."
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Renuga</h4>
+                            <span>Thirupuvanam, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 6: Vennila -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Highly satisfied with the cleanliness and hygiene standards. The Rava Laddu sweetness is perfect, and my family loved it. I will definitely order other products soon!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Vennila</h4>
+                            <span>Theni, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 7: Jeevika Sri -->
+                <div class="review-card card-reveal">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Simply the best homemade foods! The Paruppu Podi with ghee is standard comfort food for my kids. The Rava Laddu is extremely fresh. A big thanks to RK Foods!"
+                    </p>
+                    <div class="review-user">
+                        <div class="user-info">
+                            <h4>Jeevika Sri</h4>
+                            <span>Melur, India</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Inquiry Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reach Out</span>
+                <h2 class="section-title text-center">Order & Inquiries</h2>
+            </div>
+            
+            <div class="grid-layout grid-2">
+                <div class="contact-info">
+                    <h3>Get in Touch Directly</h3>
+                    <p class="contact-intro">
+                        Have custom bulk orders for weddings, festivals, or special corporate gifting? Feel free to contact us. We are happy to customize packaging size and spice levels.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"><i class="fas fa-phone-volume"></i></div>
+                            <div class="contact-text">
+                                <h5>Call / WhatsApp</h5>
+                                <p><a href="tel:+919952156494">+91 99521 56494</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
+                            <div class="contact-text">
+                                <h5>Email Inquiry</h5>
+                                <p><a href="mailto:rkfoods.ammaspecial@gmail.com">rkfoods.ammaspecial@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-icon"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="contact-text">
+                                <h5>Location</h5>
+                                <p>RK Foods Home Kitchen, Madurai, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/919952156494" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn instagram-btn">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Custom Message Builder Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send Us a Custom Message</h3>
+                    <form id="customMessageForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custName">Your Name</label>
+                                <input type="text" id="custName" placeholder="Enter name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="custLocation">Your Location (City)</label>
+                            <input type="text" id="custLocation" placeholder="e.g. Madurai, Chennai" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="custText">Inquiry details or custom requirements</label>
+                            <textarea id="custText" rows="4" placeholder="Write about items, bulk quantities, or general inquiries..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-brand">
-                <a href="index.html" class="logo-section">
-                    <img src="ultra logo.jpeg" alt="Ultra Arts & Science College Logo">
-                    <div class="college-name">ULTRA <span>COLLEGE</span></div>
-                </a>
-                <p>Empowering scholars with the tools, environment, and curriculum to lead and innovate in their careers.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-column">
+                    <a href="#home" class="logo-section footer-logo">
+                        <span class="logo-icon">🍲</span>
+                        <div class="logo-text">
+                            <span class="brand-name">RK FOODS</span>
+                            <span class="sub-brand">AMMA SPECIAL</span>
+                        </div>
+                    </a>
+                    <p class="footer-about">
+                        Handcrafting legacy flavors using traditional South Indian recipes. Fresh, nutritious, and absolutely free of artificial additives.
+                    </p>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#features">Why Choose Us</a></li>
+                        <li><a href="#reviews">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#contact">Direct Inquiry</a></li>
+                        <li><a href="https://wa.me/919952156494" target="_blank" rel="noopener noreferrer">WhatsApp Helpdesk</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About College</a></li>
-                    <li><a href="#courses">Courses Offered</a></li>
-                    <li><a href="students.html">Student Life & Gallery</a></li>
-                    <li><a href="https://uasc.ac.in" target="_blank" rel="noopener noreferrer">Official Website 🌐</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RK Foods. All rights reserved.</p>
+                <p>Designed with ❤️ for traditional home taste.</p>
             </div>
-            
-            <div class="footer-links">
-                <h4>Support & Legal</h4>
-                <ul>
-                    <li><a href="#contact">Contact Support</a></li>
-                    <li><a href="#why-choose-us">Why Choose Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2027 Ultra Arts & Science College. All rights reserved.</p>
-            <p>Made with 💙 for Ultra College Students</p>
         </div>
     </footer>
 
+    <!-- Interactive Custom Order Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeOrderModal()" aria-label="Close Order Modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-tag">Quick Order</span>
+                <h3 id="modalProductName">Product Name</h3>
+            </div>
+            <div class="modal-body">
+                
+                <div class="modal-form-group">
+                    <label class="modal-label">Choose Package Size</label>
+                    <div class="package-size-selector" id="packageSizeSelector">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+
+                <div class="modal-form-group">
+                    <label class="modal-label">Select Quantity</label>
+                    <div class="quantity-controller">
+                        <button type="button" class="qty-btn" onclick="adjustQty(-1)"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="orderQty" class="qty-input" value="1" min="1" readonly>
+                        <button type="button" class="qty-btn" onclick="adjustQty(1)"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="total-price-box">
+                    <span>Estimated Total:</span>
+                    <span id="modalTotalPrice">₹0</span>
+                </div>
+
+                <button class="btn-modal-checkout" onclick="submitWhatsAppOrder()">
+                    <i class="fab fa-whatsapp"></i> Confirm & Order via WhatsApp
+                </button>
+                <p class="modal-note">* Shipping charges calculated extra on checkout based on your delivery address.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
     <script src="script.js"></script>
 </body>
 </html>
